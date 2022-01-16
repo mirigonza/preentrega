@@ -1,0 +1,15 @@
+{% extens "base.html" %}
+
+{% block content %}
+<h1>Complete el formulario para empezar</h1>
+
+<form action="{{url_for('eleccion')}}">
+    Nombre: <input type="text" name="name"> 
+    Edad: <input type="text" name="edad">
+    Correo: <input type="text" name="correo">
+    <input type="submit" value="Ingresar">
+
+
+</form>
+
+{% enblock %}
